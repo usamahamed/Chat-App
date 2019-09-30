@@ -1,0 +1,42 @@
+
+
+    <div class="panel-body">
+      <div class="chats">
+           {{#each chats as |chat|}}
+        <div class="chat">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="Usama Hamed">
+              <img src="https://res.cloudinary.com/itgov/image/upload/v1569875602/user-new_fm7q4a.png" alt="Active user">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>
+                {{ chat.query }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="chat chat-left">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="Georg Kothmeier ">
+              <img src="https://res.cloudinary.com/itgov/image/upload/v1569875632/bot_gphhi8.png" alt="bot">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>{{ chat.speech }}</p>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="panel-footer">
+        <div class="input-group">
+            {{input value=message enter="sendChat" class="form-control" placeholder="Enter your message and press enter"}}
+        </div>
+    </div>
