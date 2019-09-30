@@ -7,8 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">A simple ember chat app with Dialogflow and Pusher<a href="https://github.com/usamahamed/Chat-App" target="_blank">Frontend</a>.</h4>
-
+<h4 align="center">A simple ember chat app with Dialogflow and Pusher
 <p align="center">
   <a href="https://github.com/usamahamed/Chat-App">
     <img src="https://badge.fury.io/js/electron-markdownify.svg"
